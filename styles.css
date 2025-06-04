@@ -1,0 +1,267 @@
+*{
+  font-family: 'Poppins',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header{
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.logo{
+  text-decoration: none;
+  color: rgb(99, 14, 228);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size:30px;
+}
+.navigation a{
+  color: rgb(99, 14, 228);
+  text-decoration:none ;
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 25px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+.navigation a:hover{
+  color: rgb(255, 128, 0);
+}
+section{
+  padding: 100px 150px;
+}
+
+.main{
+  width: 100%;
+  min-height:100vh;
+  display: flex;
+  align-items: center;
+  background: url(thumnails/photopricipe.jpg)no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main h2{
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+.main h2 span{
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(255, 145, 0);
+  font-size: 60px;
+  font-weight: 700;
+}
+.main h3{
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-top: 1px ;
+  margin-bottom: 25px;
+}
+.main-btn{
+  background-color: rgb(255, 145, 0);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 10px 35px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  transition: background-color 0.4s, transform 0.4s;
+}
+.main-btn:hover{
+  background-color: rgb(255, 128, 0);
+  transform: scale(1.1);
+}
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  padding-right: 30px;
+}
+.Title{
+  color: rgb(255, 145, 0);
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 30px ;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  background-color: white;
+  width: 340px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.2);
+  padding: 25px;
+  margin: 25px 10px;
+  transition: transform 0.7s ;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.icon{
+  color: rgb(99, 14, 228);
+  font-size: 100px;
+  text-align: center;
+}
+
+.info{
+  text-align: center;
+}
+
+.info h3{
+  color:rgb(99, 14, 228);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects{
+  background-color: rgb(48, 3, 154);
+}
+
+.projects .content{
+  margin-top: 30px;
+}
+.project-card{
+  background-color: white;
+  border: 1px solid white;
+  min-height: 230px ;
+  width: 370px;
+  border-radius: 10px;
+  margin: 20px;
+  transition: transform 0.5s ,opacity 0.5s;
+}
+ .project-card:hover{
+  transform: scale(1.1);
+}
+
+.project-card:hover .project-image{
+  opacity:0.9;
+}
+
+.project-picture img{
+  width: 100%;
+}
+
+.project-info{
+  padding: 16px;
+}
+.project-category{
+  font-size: 14px;
+  color: black;
+}
+.project-title{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.more-details{
+  text-decoration: none;
+  color: rgb(99, 14, 228);
+}
+
+.more-details:hover{
+  color: rgb(255, 145, 0);
+}
+
+.Contact .info p{
+  font-size: 22px;
+}
+.footer{
+  background-color: rgb(48, 3, 154);
+  color: white;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer-title span{
+  color: rgb(255, 145, 0);
+}
+
+@media(max-width:1023px){
+  header{
+    padding: 12px 20px;
+  }
+  
+  .navigation{
+    padding-left: 10px;
+  }
+
+  .Title{
+    font-size:25px;
+  }
+  section{
+    padding: 80px 20px ;
+  }
+  .main-content h2{
+    font-size: 16px;
+  }
+  .main-content h3{
+    font-size: 26px;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-title{
+    font-size: 15px ;
+  }
+  .social-icons a{
+    font-size: 22px;  
+  } 
+}
+
+@media(max-width:641px){
+  body{
+    font-size: 12px;
+  }
+  .main-content h2{
+    font-size: 14px;
+  }
+
+  .main-content h3{
+    font-size: 25px;
+  }
+}
+
+@media(max-width:300px){
+  body{
+    font-size: 12px
+  }
+  .main-content h2{
+    font-size: 12px;
+  }
+
+  .main-content h3{
+    font-size: 22px;
+  }
+}
